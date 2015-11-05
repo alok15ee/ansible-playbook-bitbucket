@@ -1,0 +1,8 @@
+---
+# shared playbook for apache2 setup
+
+- hosts: apache2_all
+  remote_user: root
+  roles:
+    - apache2
+    - apache2_proxy

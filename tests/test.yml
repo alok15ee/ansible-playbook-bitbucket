@@ -1,0 +1,12 @@
+---
+# test file for bitbucket
+
+- hosts: localhost
+  remote_user: root
+  roles:
+    - bitbucket
+    - postgresql
+    - postgresql_user
+    - postgresql_db
+    - apache2
+    - apache2_proxy

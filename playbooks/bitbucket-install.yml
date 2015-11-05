@@ -1,0 +1,7 @@
+---
+# shared playbook for bitbucket setup
+
+- hosts: bitbucket
+  remote_user: root
+  roles:
+    - bitbucket

@@ -1,0 +1,23 @@
+---
+# roles file for bitbucket
+
+- src: https://github.com/pantarei/ansible-role-apt.git
+  name: apt
+
+- src: https://github.com/pantarei/ansible-role-java.git
+  name: java
+
+- src: https://github.com/pantarei/ansible-role-apache2.git
+  name: apache2
+
+- src: https://github.com/pantarei/ansible-role-postgresql.git
+  name: postgresql
+
+- src: https://github.com/pantarei/ansible-role-postgresql-user.git
+  name: postgresql_user
+
+- src: https://github.com/pantarei/ansible-role-postgresql-db.git
+  name: postgresql_db
+
+- src: https://github.com/pantarei/ansible-role-bitbucket.git
+  name: bitbucket
