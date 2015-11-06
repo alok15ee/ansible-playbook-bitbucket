@@ -1,5 +1,5 @@
-Confluence Ansible Playbook
-===========================
+BitBucket Ansible Playbook
+==========================
 
 [![Build
 Status](https://travis-ci.org/pantarei/ansible-playbook-bitbucket.svg?branch=master)](https://travis-ci.org/pantarei/ansible-playbook-bitbucket)
