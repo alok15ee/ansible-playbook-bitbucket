@@ -10,6 +10,9 @@
 - src: https://github.com/pantarei/ansible-role-apache2.git
   name: apache2
 
+- src: https://github.com/pantarei/ansible-role-apache2-proxy.git
+  name: apache2_proxy
+
 - src: https://github.com/pantarei/ansible-role-postgresql.git
   name: postgresql
 
