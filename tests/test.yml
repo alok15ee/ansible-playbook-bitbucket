@@ -5,6 +5,7 @@
   remote_user: root
   roles:
     - bitbucket
+    - mysql_connector_java
     - postgresql
     - postgresql_user
     - postgresql_db
