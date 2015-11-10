@@ -5,3 +5,4 @@
   remote_user: root
   roles:
     - bitbucket
+    - { role: mysql_connector_java, mysql_connector_java_dest: "{{ bitbucket_catalina }}/lib" }

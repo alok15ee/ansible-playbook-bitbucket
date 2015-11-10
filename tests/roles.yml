@@ -13,6 +13,9 @@
 - src: https://github.com/pantarei/ansible-role-apache2-proxy.git
   name: apache2_proxy
 
+- src: https://github.com/pantarei/ansible-role-mysql-connector-java.git
+  name: mysql_connector_java
+
 - src: https://github.com/pantarei/ansible-role-postgresql.git
   name: postgresql
 
