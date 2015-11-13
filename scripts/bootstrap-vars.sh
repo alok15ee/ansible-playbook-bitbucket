@@ -17,6 +17,7 @@ sed -i "s/^#\(apache2_proxy_pass\):.*/#\1: \/   http:\/\/localhost:7990\//g" $TM
 sed -i "s/^#\(apache2_proxy_pass_reverse\):.*/#\1: \/   http:\/\/localhost:7990\//g" $TMP_VARS
 sed -i "s/^#\(apache2_proxy_scheme\):.*/#\1: https/g" $TMP_VARS
 sed -i "s/^#\(apache2_proxy_server_name\):.*/#\1: bitbucket.example.com/g" $TMP_VARS
+sed -i "s/^#\(apt_cache_valid_time\):.*/\1: 0/g" $TMP_VARS
 sed -i "s/^#\(bitbucket_pass\):.*/\1: "$PASSWD"/g" $TMP_VARS
 sed -i "s/^#\(bitbucket_proxy_name\):.*/#\1: bitbucket.example.com/g" $TMP_VARS
 sed -i "s/^#\(bitbucket_scheme\):.*/#\1: https/g" $TMP_VARS
