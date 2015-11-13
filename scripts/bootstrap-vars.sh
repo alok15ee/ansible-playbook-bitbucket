@@ -8,8 +8,11 @@ cd $DIR/../
 # Generate the group_vars/all with all default role variables.
 PASSWD=`< /dev/urandom tr -dc A-Za-z0-9 | head -c8`
 TMP_VARS=`mktemp`
-echo -e "\n# Updated on `date`" >> $TMP_VARS
+
+echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g' >> $TMP_VARS
+echo -e "\n" >> $TMP_VARS
+
 sed -i "s/^#\(apache2_proxy_pass\):.*/#\1: \/   http:\/\/localhost:7990\//g" $TMP_VARS
 sed -i "s/^#\(apache2_proxy_pass_reverse\):.*/#\1: \/   http:\/\/localhost:7990\//g" $TMP_VARS
 sed -i "s/^#\(apache2_proxy_scheme\):.*/#\1: https/g" $TMP_VARS
@@ -28,4 +31,5 @@ sed -i "s/^#\(postgresql_db_owner\):.*/\1: bitbucket/g" $TMP_VARS
 sed -i "s/^#\(postgresql_db_template\):.*/\1: template0/g" $TMP_VARS
 sed -i "s/^#\(postgresql_user_name\):.*/\1: bitbucket/g" $TMP_VARS
 sed -i "s/^#\(postgresql_user_password\):.*/\1: "$PASSWD"/g" $TMP_VARS
+
 cat $TMP_VARS >> group_vars/all
