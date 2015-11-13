@@ -11,14 +11,14 @@ license](https://img.shields.io/github/license/pantarei/ansible-playbook-bitbuck
 Ansible Playbook for Atlassian BitBucket Installation.
 
 Requirements
-============
+------------
 
 This playbook require Ansible 1.9 or higher.
 
 This playbook was designed for Ubuntu Server 14.04 LTS.
 
 Quick Start
-===========
+-----------
 
 All-in-one (AIO) builds are a great way to perform an BitBucket build
 for
@@ -31,7 +31,7 @@ Although AIO builds aren’t recommended for large production deployments,
 they’re great for smaller proof-of-concept deployments.
 
 AIO in One Step
-===============
+---------------
 
 For a one-step build, there is a [convenient
 script](https://raw.githubusercontent.com/pantarei/ansible-playbook-bitbucket/master/scripts/run-aio-build.sh)
@@ -45,7 +45,7 @@ screen, so that you don’t lose your progress if you’re disconnected from
 your terminal session.
 
 AIO with Customization
-======================
+----------------------
 
 There are four main steps for running a customized AIO build:
 
