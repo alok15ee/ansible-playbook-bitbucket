@@ -1,38 +1,26 @@
 ---
 # roles file for bitbucket
 
-- src: https://github.com/pantarei/ansible-role-apt.git
-  name: apt
+- src: hswong3i.apt
 
-- src: https://github.com/pantarei/ansible-role-java.git
-  name: java
+- src: hswong3i.java
 
-- src: https://github.com/pantarei/ansible-role-apache2.git
-  name: apache2
+- src: hswong3i.apache2
 
-- src: https://github.com/pantarei/ansible-role-apache2-proxy.git
-  name: apache2_proxy
+- src: hswong3i.apache2_proxy
 
-- src: https://github.com/pantarei/ansible-role-mysql.git
-  name: mysql
+- src: hswong3i.mysql
 
-- src: https://github.com/pantarei/ansible-role-mysql-user.git
-  name: mysql_user
+- src: hswong3i.mysql_user
 
-- src: https://github.com/pantarei/ansible-role-mysql-db.git
-  name: mysql_db
+- src: hswong3i.mysql_db
 
-- src: https://github.com/pantarei/ansible-role-mysql-connector-java.git
-  name: mysql_connector_java
+- src: hswong3i.mysql_connector_java
 
-- src: https://github.com/pantarei/ansible-role-postgresql.git
-  name: postgresql
+- src: hswong3i.postgresql
 
-- src: https://github.com/pantarei/ansible-role-postgresql-user.git
-  name: postgresql_user
+- src: hswong3i.postgresql_user
 
-- src: https://github.com/pantarei/ansible-role-postgresql-db.git
-  name: postgresql_db
+- src: hswong3i.postgresql_db
 
-- src: https://github.com/pantarei/ansible-role-bitbucket.git
-  name: bitbucket
+- src: hswong3i.bitbucket
