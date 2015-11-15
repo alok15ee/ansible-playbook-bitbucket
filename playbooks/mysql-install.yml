@@ -4,6 +4,6 @@
 - hosts: mysql
   remote_user: root
   roles:
-    - mysql
-    - mysql_user
-    - mysql_db
+    - hswong3i.mysql
+    - hswong3i.mysql_user
+    - hswong3i.mysql_db

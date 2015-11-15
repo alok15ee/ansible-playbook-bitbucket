@@ -4,5 +4,5 @@
 - hosts: apache2_all
   remote_user: root
   roles:
-    - apache2
-    - apache2_proxy
+    - hswong3i.apache2
+    - hswong3i.apache2_proxy
