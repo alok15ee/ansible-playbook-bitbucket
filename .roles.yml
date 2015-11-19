@@ -3,6 +3,10 @@
 
 - src: hswong3i.apt
 
+- src: hswong3i.locales
+
+- src: hswong3i.tzdata
+
 - src: hswong3i.java
 
 - src: hswong3i.apache2
