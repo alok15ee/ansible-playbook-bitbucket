@@ -4,6 +4,8 @@
 - hosts: mysql
   remote_user: root
   roles:
+    - hswong3i.locales
+    - hswong3i.tzdata
     - hswong3i.mysql
     - hswong3i.mysql_user
     - hswong3i.mysql_db
