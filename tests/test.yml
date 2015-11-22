@@ -4,8 +4,6 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - hswong3i.locales
-    - hswong3i.tzdata
     - hswong3i.bitbucket
     - hswong3i.mysql_connector_java
     - hswong3i.mysql
