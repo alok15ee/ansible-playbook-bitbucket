@@ -1,8 +1,8 @@
 ---
 # shared playbook for apache2 setup
 
-- hosts: apache2_all
+- hosts: apache2
   remote_user: root
   roles:
     - hswong3i.apache2
-    - hswong3i.apache2_proxy
+    - hswong3i.apache2_vhosts

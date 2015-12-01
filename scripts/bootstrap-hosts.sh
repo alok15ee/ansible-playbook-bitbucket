@@ -17,7 +17,7 @@ localhost   ansible_connection=local
 #[mysql]
 #localhost   ansible_connection=local
 
-#[apache2_all]
+#[apache2]
 #localhost   ansible_connection=local
 
 EOF
