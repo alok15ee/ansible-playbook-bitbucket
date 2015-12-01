@@ -13,4 +13,4 @@
     - hswong3i.postgresql_user
     - hswong3i.postgresql_db
     - hswong3i.apache2
-    - hswong3i.apache2_proxy
+    - hswong3i.apache2_vhosts
