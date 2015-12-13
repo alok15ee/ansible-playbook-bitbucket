@@ -1,28 +1,16 @@
 ---
 # roles file for bitbucket
 
-- src: hswong3i.apt
-
-- src: hswong3i.ufw
-
-- src: hswong3i.java
-
 - src: hswong3i.apache2
-
 - src: hswong3i.apache2_vhosts
-
+- src: hswong3i.apt
+- src: hswong3i.java
 - src: hswong3i.mysql
-
-- src: hswong3i.mysql_user
-
-- src: hswong3i.mysql_db
-
 - src: hswong3i.mysql_connector_java
-
+- src: hswong3i.mysql_db
+- src: hswong3i.mysql_user
 - src: hswong3i.postgresql
-
-- src: hswong3i.postgresql_user
-
 - src: hswong3i.postgresql_db
-
+- src: hswong3i.postgresql_user
+- src: hswong3i.ufw
 - src: hswong3i.bitbucket
