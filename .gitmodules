@@ -1,0 +1,52 @@
+[submodule "roles/hswong3i.apache2"]
+	path = roles/hswong3i.apache2
+	url = https://github.com/pantarei/ansible-role-apache2.git
+	branch = master
+[submodule "roles/hswong3i.apache2_vhosts"]
+	path = roles/hswong3i.apache2_vhosts
+	url = https://github.com/pantarei/ansible-role-apache2-vhosts.git
+	branch = master
+[submodule "roles/hswong3i.apt"]
+	path = roles/hswong3i.apt
+	url = https://github.com/pantarei/ansible-role-apt.git
+	branch = master
+[submodule "roles/hswong3i.java"]
+	path = roles/hswong3i.java
+	url = https://github.com/pantarei/ansible-role-java.git
+	branch = master
+[submodule "roles/hswong3i.mysql"]
+	path = roles/hswong3i.mysql
+	url = https://github.com/pantarei/ansible-role-mysql.git
+	branch = master
+[submodule "roles/hswong3i.mysql_connector_java"]
+	path = roles/hswong3i.mysql_connector_java
+	url = https://github.com/pantarei/ansible-role-mysql-connector-java.git
+	branch = master
+[submodule "roles/hswong3i.mysql_db"]
+	path = roles/hswong3i.mysql_db
+	url = https://github.com/pantarei/ansible-role-mysql-db.git
+	branch = master
+[submodule "roles/hswong3i.mysql_user"]
+	path = roles/hswong3i.mysql_user
+	url = https://github.com/pantarei/ansible-role-mysql-user.git
+	branch = master
+[submodule "roles/hswong3i.postgresql"]
+	path = roles/hswong3i.postgresql
+	url = https://github.com/pantarei/ansible-role-postgresql.git
+	branch = master
+[submodule "roles/hswong3i.postgresql_db"]
+	path = roles/hswong3i.postgresql_db
+	url = https://github.com/pantarei/ansible-role-postgresql-db.git
+	branch = master
+[submodule "roles/hswong3i.postgresql_user"]
+	path = roles/hswong3i.postgresql_user
+	url = https://github.com/pantarei/ansible-role-postgresql-user.git
+	branch = master
+[submodule "roles/hswong3i.ufw"]
+	path = roles/hswong3i.ufw
+	url = https://github.com/pantarei/ansible-role-ufw.git
+	branch = master
+[submodule "roles/hswong3i.bitbucket"]
+	path = roles/hswong3i.bitbucket
+	url = https://github.com/pantarei/ansible-role-bitbucket.git
+	branch = master
