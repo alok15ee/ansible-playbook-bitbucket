@@ -7,7 +7,7 @@ apt-get update
 apt-get -y install git
 
 # GIT clone our playbook to CWD.
-git clone https://github.com/pantarei/ansible-playbook-bitbucket.git /opt/ansible-playbook-bitbucket
+git clone --recursive https://github.com/pantarei/ansible-playbook-bitbucket.git /opt/ansible-playbook-bitbucket
 cd /opt/ansible-playbook-bitbucket
 
 # Bootstrap Ansible then run all playbooks.

@@ -54,7 +54,7 @@ There are four main steps for running a customized AIO build:
 Start by cloning the ansible-playbook-bitbucket repository and changing
  into the repository root directory:
 
-    $ git clone https://github.com/pantarei/ansible-playbook-bitbucket.git \
+    $ git clone --recursive https://github.com/pantarei/ansible-playbook-bitbucket.git \
         /opt/ansible-playbook-bitbucket
     $ cd /opt/ansible-playbook-bitbucket
 
