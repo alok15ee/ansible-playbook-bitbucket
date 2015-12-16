@@ -34,8 +34,8 @@ TMP_VARS=`mktemp`
 echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | egrep -e '^(apt|ufw|mysql).*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
-perl -i -p -e "s/^#(mysql_db_collation):.*/#\1: utf8_bin/g" $TMP_VARS
-perl -i -p -e "s/^#(mysql_db_encoding):.*/#\1: utf8/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_db_collation):.*/\1: utf8_bin/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_db_encoding):.*/\1: utf8/g" $TMP_VARS
 perl -i -p -e "s/^#(ufw_to_port):.*/\1: [\n  { to_port: '22', proto: 'tcp', rule: 'allow' },\n  { to_port: '3306', proto: 'tcp', rule: 'allow' },\n  { to_port: '1024:65535', proto: 'tcp', rule: 'allow' },\n]/g" $TMP_VARS
 cat $TMP_VARS >> group_vars/mysql
 
@@ -45,6 +45,8 @@ echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | egrep -e '^(apt|ufw|postgresql).*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
 perl -i -p -e "s/^#(postgresql_db_encoding):.*/\1: UTF8/g" $TMP_VARS
+perl -i -p -e "s/^#(postgresql_db_lc_collate):.*/\1: C/g" $TMP_VARS
+perl -i -p -e "s/^#(postgresql_db_lc_ctype):.*/\1: C/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_db_template):.*/\1: template0/g" $TMP_VARS
 perl -i -p -e "s/^#(ufw_to_port):.*/\1: [\n  { to_port: '22', proto: 'tcp', rule: 'allow' },\n  { to_port: '5432', proto: 'tcp', rule: 'allow' },\n  { to_port: '1024:65535', proto: 'tcp', rule: 'allow' },\n]/g" $TMP_VARS
 cat $TMP_VARS >> group_vars/postgresql
