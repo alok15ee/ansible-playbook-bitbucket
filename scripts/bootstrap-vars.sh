@@ -21,10 +21,12 @@ perl -i -p -e "s/^#(bitbucket_pass):.*/\1: "$PASSWD"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_proxy_name):.*/\1: bitbucket.example.com/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_user):.*/\1: bitbucket/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_db_name):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_user_db):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_user_name):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_user_password):.*/\1: \"{{ bitbucket_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_db_name):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_db_owner):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(postgresql_user_db):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_user_name):.*/\1: \"{{ bitbucket_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_user_password):.*/\1: \"{{ bitbucket_pass }}\"/g" $TMP_VARS
 cat $TMP_VARS >> group_vars/all

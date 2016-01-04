@@ -1,0 +1,11 @@
+---
+# shared playbook for bitbucket setup
+
+- hosts: bitbucket
+  remote_user: root
+  roles:
+    - hswong3i.apt
+    - hswong3i.ufw
+    - hswong3i.java
+
+- include: bitbucket-vhosts.yml

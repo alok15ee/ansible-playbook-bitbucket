@@ -1,0 +1,10 @@
+---
+# deployment playbook for bitbucket
+
+- include: bitbucket-aio.yml
+
+- include: mysql-aio.yml
+
+- include: postgresql-aio.yml
+
+- include: apache2-aio.yml

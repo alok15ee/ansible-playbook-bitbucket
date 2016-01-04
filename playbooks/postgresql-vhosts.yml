@@ -4,8 +4,5 @@
 - hosts: postgresql
   remote_user: root
   roles:
-    - hswong3i.apt
-    - hswong3i.ufw
-    - hswong3i.postgresql
-    - hswong3i.postgresql_user
     - hswong3i.postgresql_db
+    - hswong3i.postgresql_user
