@@ -1,0 +1,12 @@
+---
+# shared playbook for postgresql setup
+
+- hosts: postgresql
+  remote_user: root
+  roles:
+    - hswong3i.apt
+    - hswong3i.ufw
+
+- include: postgresql-service.yml
+
+- include: postgresql-vhosts.yml

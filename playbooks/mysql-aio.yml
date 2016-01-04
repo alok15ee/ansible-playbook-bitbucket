@@ -6,6 +6,7 @@
   roles:
     - hswong3i.apt
     - hswong3i.ufw
-    - hswong3i.mysql
-    - hswong3i.mysql_user
-    - hswong3i.mysql_db
+
+- include: mysql-service.yml
+
+- include: mysql-vhosts.yml

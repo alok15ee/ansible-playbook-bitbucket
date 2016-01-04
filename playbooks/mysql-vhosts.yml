@@ -1,0 +1,8 @@
+---
+# shared playbook for mysql setup
+
+- hosts: mysql
+  remote_user: root
+  roles:
+    - hswong3i.mysql_db
+    - hswong3i.mysql_user
