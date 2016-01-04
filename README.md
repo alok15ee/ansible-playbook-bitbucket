@@ -78,7 +78,7 @@ By default the scripts deploy only BitBucket and PostgreSQL. At this
 
 Finally, run the plabooks by executing:
 
-    $ scripts/run-playbooks.sh
+    $ ansible-playbook -i hosts playbooks/run-aio-build.yml
 
 Dependencies
 ------------
