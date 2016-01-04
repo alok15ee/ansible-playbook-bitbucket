@@ -4,8 +4,5 @@
 - hosts: bitbucket
   remote_user: root
   roles:
-    - hswong3i.apt
-    - hswong3i.ufw
-    - hswong3i.java
     - hswong3i.bitbucket
     - hswong3i.mysql_connector_java

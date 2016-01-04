@@ -1,0 +1,10 @@
+---
+# deployment playbook for bitbucket
+
+- include: bitbucket-vhosts.yml
+
+- include: mysql-vhosts.yml
+
+- include: postgresql-vhosts.yml
+
+- include: apache2-vhosts.yml
