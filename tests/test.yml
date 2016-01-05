@@ -10,10 +10,10 @@
     - hswong3i.bitbucket
     - hswong3i.mysql_connector_java
     - hswong3i.mysql
-    - hswong3i.mysql_user
     - hswong3i.mysql_db
+    - hswong3i.mysql_user
     - hswong3i.postgresql
-    - hswong3i.postgresql_user
     - hswong3i.postgresql_db
+    - hswong3i.postgresql_user
     - hswong3i.apache2
     - hswong3i.apache2_vhosts
