@@ -68,6 +68,8 @@ echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | egrep -e '^(apt|ufw|apache2).*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_document_root):.*/\1: ~/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_http_port):.*/\1: \"{{ apache2_http_port }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_https_port):.*/\1: \"{{ apache2_https_port }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_pass):.*/#\1: \/   http:\/\/localhost:7990\//g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_pass_reverse):.*/#\1: \/   http:\/\/localhost:7990\//g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_preserve_host):.*/\1: 'Off'/g" $TMP_VARS
