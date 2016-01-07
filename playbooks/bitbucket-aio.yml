@@ -8,4 +8,4 @@
     - hswong3i.ufw
     - hswong3i.java
 
-- include: bitbucket-vhosts.yml
+- include: bitbucket-core.yml

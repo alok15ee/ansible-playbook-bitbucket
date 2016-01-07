@@ -6,7 +6,6 @@
   roles:
     - hswong3i.apt
     - hswong3i.ufw
+    - hswong3i.apache2
 
-- include: apache2-service.yml
-
-- include: apache2-vhosts.yml
+- include: apache2-core.yml

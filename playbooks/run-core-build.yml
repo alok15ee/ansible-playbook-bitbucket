@@ -1,0 +1,10 @@
+---
+# deployment playbook for bitbucket
+
+- include: bitbucket-core.yml
+
+- include: mysql-core.yml
+
+- include: postgresql-core.yml
+
+- include: apache2-core.yml
