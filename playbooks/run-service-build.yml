@@ -1,8 +1,0 @@
----
-# deployment playbook for bitbucket
-
-- include: mysql-service.yml
-
-- include: postgresql-service.yml
-
-- include: apache2-service.yml

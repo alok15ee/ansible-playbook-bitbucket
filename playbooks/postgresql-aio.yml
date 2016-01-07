@@ -6,7 +6,6 @@
   roles:
     - hswong3i.apt
     - hswong3i.ufw
+    - hswong3i.postgresql
 
-- include: postgresql-service.yml
-
-- include: postgresql-vhosts.yml
+- include: postgresql-core.yml
