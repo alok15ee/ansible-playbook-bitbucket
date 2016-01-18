@@ -6,18 +6,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR/../
 
 # Copy hosts files from template.
-echo -e "# Updated on `date`" >> hosts
-cat >> hosts <<-EOF
-[bitbucket]
-localhost   ansible_connection=local
-
-[postgresql]
-localhost   ansible_connection=local
-
-#[mysql]
-#localhost   ansible_connection=local
-
-#[apache2]
-#localhost   ansible_connection=local
+TMP_HOSTS=`mktemp`
+echo -e "# Updated on `date`" >> $TMP_HOSTS
+find playbooks/*.yml -type f -exec cat {} \; | grep "hosts:" | perl -p -e  's/^.*:\s(.*)/\1/g' | sort -u | while read line;
+do
+    cat >> $TMP_HOSTS <<-EOF
+[$line]
+localhost.localdomain  ansible_host=127.0.0.1
 
 EOF
+done
+cat $TMP_HOSTS >> inventory/localhost

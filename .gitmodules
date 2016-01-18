@@ -22,25 +22,17 @@
 	path = roles/hswong3i.mysql_connector_java
 	url = https://github.com/pantarei/ansible-role-mysql-connector-java.git
 	branch = master
-[submodule "roles/hswong3i.mysql_db"]
-	path = roles/hswong3i.mysql_db
-	url = https://github.com/pantarei/ansible-role-mysql-db.git
-	branch = master
-[submodule "roles/hswong3i.mysql_user"]
-	path = roles/hswong3i.mysql_user
-	url = https://github.com/pantarei/ansible-role-mysql-user.git
+[submodule "roles/hswong3i.mysql_vhosts"]
+	path = roles/hswong3i.mysql_vhosts
+	url = https://github.com/pantarei/ansible-role-mysql-vhosts.git
 	branch = master
 [submodule "roles/hswong3i.postgresql"]
 	path = roles/hswong3i.postgresql
 	url = https://github.com/pantarei/ansible-role-postgresql.git
 	branch = master
-[submodule "roles/hswong3i.postgresql_db"]
-	path = roles/hswong3i.postgresql_db
-	url = https://github.com/pantarei/ansible-role-postgresql-db.git
-	branch = master
-[submodule "roles/hswong3i.postgresql_user"]
-	path = roles/hswong3i.postgresql_user
-	url = https://github.com/pantarei/ansible-role-postgresql-user.git
+[submodule "roles/hswong3i.postgresql_vhosts"]
+	path = roles/hswong3i.postgresql_vhosts
+	url = https://github.com/pantarei/ansible-role-postgresql-vhosts.git
 	branch = master
 [submodule "roles/hswong3i.ufw"]
 	path = roles/hswong3i.ufw

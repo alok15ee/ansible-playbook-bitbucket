@@ -89,11 +89,9 @@ Dependencies
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
 -   [hswong3i.mysql\_connector\_java](https://github.com/pantarei/ansible-role-mysql-connector-java)
--   [hswong3i.mysql\_db](https://github.com/pantarei/ansible-role-mysql-db)
--   [hswong3i.mysql\_user](https://github.com/pantarei/ansible-role-mysql-user)
+-   [hswong3i.mysql\_vhosts](https://github.com/pantarei/ansible-role-mysql-vhosts)
 -   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
--   [hswong3i.postgresql\_db](https://github.com/pantarei/ansible-role-postgresql-db)
--   [hswong3i.postgresql\_user](https://github.com/pantarei/ansible-role-postgresql-user)
+-   [hswong3i.postgresql\_vhosts](https://github.com/pantarei/ansible-role-postgresql-vhosts)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
 -   [hswong3i.bitbucket](https://github.com/pantarei/ansible-role-bitbucket)
 
@@ -107,6 +105,6 @@ Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <a href="https://twitter.com/hswong3i">https://twitter.com/hswong3i</a>
-    -   <a href="https://github.com/hswong3i">https://github.com/hswong3i</a>
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
 
