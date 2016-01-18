@@ -17,29 +17,22 @@ This playbook was designed for Ubuntu Server 14.04 LTS.
 Quick Start
 -----------
 
-All-in-one (AIO) builds are a great way to perform an BitBucket build
-for
+All-in-one (AIO) builds are a great way to perform an BitBucket build for
 
 -   A development environment
 -   An overview of how all of the BitBucket services fit together
 -   A simple lab deployment
 
-Although AIO builds aren’t recommended for large production deployments,
-they’re great for smaller proof-of-concept deployments.
+Although AIO builds aren’t recommended for large production deployments, they’re great for smaller proof-of-concept deployments.
 
 AIO in One Step
 ---------------
 
-For a one-step build, there is a [convenient
-script](https://raw.githubusercontent.com/pantarei/ansible-playbook-bitbucket/master/scripts/run-aio-build.sh)
-within the ansible-playbook-bitbucket repository that will run a AIO
-build with defaults:
+For a one-step build, there is a [convenient script](https://raw.githubusercontent.com/pantarei/ansible-playbook-bitbucket/master/scripts/run-aio-build.sh) within the ansible-playbook-bitbucket repository that will run a AIO build with defaults:
 
     bash <(curl -sL https://raw.githubusercontent.com/pantarei/ansible-playbook-bitbucket/master/scripts/run-aio-build.sh)
 
-It’s advised to run this build within a terminal muxer, like tmux or
-screen, so that you don’t lose your progress if you’re disconnected from
-your terminal session.
+It’s advised to run this build within a terminal muxer, like tmux or screen, so that you don’t lose your progress if you’re disconnected from your terminal session.
 
 AIO with Customization
 ----------------------
@@ -51,8 +44,7 @@ There are four main steps for running a customized AIO build:
 -   Configuration *(this step is optional)*
 -   Run playbooks
 
-Start by cloning the ansible-playbook-bitbucket repository and changing
-into the repository root directory:
+Start by cloning the ansible-playbook-bitbucket repository and changing into the repository root directory:
 
     $ git clone --recursive https://github.com/pantarei/ansible-playbook-bitbucket.git \
         /opt/ansible-playbook-bitbucket
@@ -65,14 +57,10 @@ Next bootstrap Ansible by executing:
 Now we can bootstrap Ansible's roles, vars and hosts by executing:
 
     $ scripts/bootstrap-roles.sh
-    $ scripts/bootstrap-vars.sh
-    $ scripts/bootstrap-hosts.sh
+    $ scripts/bootstrap-group_vars.sh
+    $ scripts/bootstrap-inventory.sh
 
-By default the scripts deploy only BitBucket and PostgreSQL. At this
-point you may optionally adjuct which services are deployed within your
-AIO build. Look at the `group_vars/all` and `hosts` for more details.
-For example, if you'd like to upgrade your Ubuntu set the
-`apt_upgrade` as `full` at `group_vars/all`:
+By default the scripts deploy only BitBucket and PostgreSQL. At this point you may optionally adjuct which services are deployed within your AIO build. Look at the `group_vars/all` and `inventory/localhost` for more details. For example, if you'd like to upgrade your Ubuntu set the `apt_upgrade` as `full` at `group_vars/all`:
 
     apt_upgrade: full
 
