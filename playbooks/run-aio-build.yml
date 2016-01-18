@@ -1,10 +1,8 @@
 ---
 # deployment playbook for bitbucket
 
-- include: bitbucket-aio.yml
+# core packages
+- include: run-core-build.yml
 
-- include: mysql-aio.yml
-
-- include: postgresql-aio.yml
-
-- include: apache2-aio.yml
+# vhosts packages
+- include: run-vhosts-build.yml

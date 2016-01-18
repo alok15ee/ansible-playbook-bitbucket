@@ -4,16 +4,14 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - hswong3i.apt
-    - hswong3i.ufw
-    - hswong3i.java
-    - hswong3i.bitbucket
-    - hswong3i.mysql_connector_java
-    - hswong3i.mysql
-    - hswong3i.mysql_db
-    - hswong3i.mysql_user
-    - hswong3i.postgresql
-    - hswong3i.postgresql_db
-    - hswong3i.postgresql_user
     - hswong3i.apache2
     - hswong3i.apache2_vhosts
+    - hswong3i.apt
+    - hswong3i.java
+    - hswong3i.mysql
+    - hswong3i.mysql_connector_java
+    - hswong3i.mysql_vhosts
+    - hswong3i.postgresql
+    - hswong3i.postgresql_vhosts
+    - hswong3i.ufw
+    - hswong3i.bitbucket
