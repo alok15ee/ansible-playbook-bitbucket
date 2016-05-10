@@ -1,8 +1,0 @@
----
-# deployment playbook for bitbucket
-
-# service/shared packages
-- include: apache2-core.yml
-- include: mysql-core.yml
-- include: postgresql-core.yml
-- include: bitbucket-core.yml
