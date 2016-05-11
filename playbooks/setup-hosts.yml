@@ -19,8 +19,3 @@
         - { direction: "incoming", policy: "deny" }
         - { direction: "outgoing", policy: "allow" }
         - { direction: "routed", policy: "allow" }
-
-- hosts: bitbucket
-  remote_user: root
-  roles:
-    - hswong3i.java

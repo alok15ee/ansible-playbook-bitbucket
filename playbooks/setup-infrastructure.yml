@@ -3,3 +3,4 @@
 - include: apache2-install.yml
 - include: mysql-install.yml
 - include: postgresql-install.yml
+- include: java-install.yml
