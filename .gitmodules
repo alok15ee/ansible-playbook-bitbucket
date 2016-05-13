@@ -42,3 +42,19 @@
 	path = roles/hswong3i.bitbucket
 	url = https://github.com/pantarei/ansible-role-bitbucket.git
 	branch = master
+[submodule "roles/hswong3i.hostname"]
+	path = roles/hswong3i.hostname
+	url = https://github.com/pantarei/ansible-role-hostname.git
+    branch = master
+[submodule "roles/hswong3i.locales"]
+	path = roles/hswong3i.locales
+	url = https://github.com/pantarei/ansible-role-locales.git
+    branch = master
+[submodule "roles/hswong3i.tzdata"]
+	path = roles/hswong3i.tzdata
+	url = https://github.com/pantarei/ansible-role-tzdata.git
+    branch = master
+[submodule "roles/hswong3i.ntp"]
+	path = roles/hswong3i.ntp
+	url = https://github.com/pantarei/ansible-role-ntp.git
+    branch = master

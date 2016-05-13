@@ -4,6 +4,10 @@
   remote_user: root
   roles:
     - hswong3i.apt
+    - hswong3i.hostname
+    - hswong3i.locales
+    - hswong3i.tzdata
+    - hswong3i.ntp
     - role: hswong3i.ufw
       ufw_interface:
         - { interface: "lo", direction: "in", rule: "allow" }
