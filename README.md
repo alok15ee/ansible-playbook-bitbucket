@@ -63,14 +63,18 @@ Dependencies
 -   [hswong3i.apache2](https://github.com/pantarei/ansible-role-apache2)
 -   [hswong3i.apache2\_vhosts](https://github.com/pantarei/ansible-role-apache2-vhosts)
 -   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
+-   [hswong3i.bitbucket](https://github.com/pantarei/ansible-role-bitbucket)
+-   [hswong3i.hostname](https://github.com/pantarei/ansible-role-hostname)
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
+-   [hswong3i.locales](https://github.com/pantarei/ansible-role-locales)
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
 -   [hswong3i.mysql\_connector\_java](https://github.com/pantarei/ansible-role-mysql-connector-java)
 -   [hswong3i.mysql\_vhosts](https://github.com/pantarei/ansible-role-mysql-vhosts)
+-   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
 -   [hswong3i.postgresql\_vhosts](https://github.com/pantarei/ansible-role-postgresql-vhosts)
+-   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
--   [hswong3i.bitbucket](https://github.com/pantarei/ansible-role-bitbucket)
 
 License
 -------
