@@ -16,7 +16,7 @@ apache2_vhosts_server_name: "bitbucket.example.com"
 apache2_vhosts_uid: ~
 apache2_vhosts_user: "bitbucket"
 apt_cache_valid_time: "3600"
-apt_upgrade: "full"
+apt_upgrade: "no"
 bitbucket_connector_port: "7990"
 bitbucket_gid: "{{ apache2_vhosts_gid }}"
 bitbucket_hash_salt: "{{ apache2_vhosts_hash_salt }}"
