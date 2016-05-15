@@ -1,1 +1,16 @@
-localhost   ansible_connection=local
+# Updated on Fri May 13 15:32:25 HKT 2016
+[apache2]
+localhost.localdomain	ansible_connection=local
+
+[bitbucket]
+localhost.localdomain	ansible_connection=local
+
+[java]
+localhost.localdomain	ansible_connection=local
+
+[mysql]
+localhost.localdomain	ansible_connection=local
+
+[postgresql]
+localhost.localdomain	ansible_connection=local
+
