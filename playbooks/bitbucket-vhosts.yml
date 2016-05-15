@@ -1,8 +1,0 @@
----
-# shared playbook for bitbucket setup
-
-- hosts: bitbucket
-  remote_user: root
-  roles:
-    - hswong3i.bitbucket
-    - hswong3i.mysql_connector_java

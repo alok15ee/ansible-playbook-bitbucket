@@ -1,17 +1,4 @@
 ---
 # test file for bitbucket
 
-- hosts: localhost
-  remote_user: root
-  roles:
-    - hswong3i.apache2
-    - hswong3i.apache2_vhosts
-    - hswong3i.apt
-    - hswong3i.java
-    - hswong3i.mysql
-    - hswong3i.mysql_connector_java
-    - hswong3i.mysql_vhosts
-    - hswong3i.postgresql
-    - hswong3i.postgresql_vhosts
-    - hswong3i.ufw
-    - hswong3i.bitbucket
+- include: ../playbooks/setup-everything.yml
