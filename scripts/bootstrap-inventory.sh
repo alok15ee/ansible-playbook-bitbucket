@@ -16,4 +16,4 @@ bitbucket.aio	ansible_host=127.0.0.1
 
 EOF
 done
-cat $TMP_HOSTS >> inventory/bitbucket
+cat $TMP_HOSTS >> inventory/bitbucket.aio
