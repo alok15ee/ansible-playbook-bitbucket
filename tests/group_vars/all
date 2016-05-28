@@ -1,13 +1,13 @@
-# Updated on Wed May 25 15:53:56 HKT 2016
+# Updated on Sun May 29 05:05:53 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_document_root: ~
 apache2_vhosts_gid: ~
-apache2_vhosts_hash_salt: "iz3qPoXVn2TmWuFe"
+apache2_vhosts_hash_salt: "bRiu2JMcCtTDJFym"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "bitbucket"
-apache2_vhosts_pass: "ULZbfTbU"
+apache2_vhosts_pass: "NJZ7Ebkm"
 apache2_vhosts_proxy_pass: "/   http://localhost:{{ bitbucket_connector_port }}/"
 apache2_vhosts_proxy_pass_reverse: "/   http://localhost:{{ bitbucket_connector_port }}/"
 apache2_vhosts_proxy_preserve_host: "Off"
