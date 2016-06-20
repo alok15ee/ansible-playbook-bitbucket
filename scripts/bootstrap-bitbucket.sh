@@ -11,6 +11,7 @@ SALT=`< /dev/urandom tr -dc A-Za-z0-9 | head -c16`
 
 # Prepare group_vars/all.
 TMP_VARS=`mktemp`
+echo -e "---" >> $TMP_VARS
 echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
