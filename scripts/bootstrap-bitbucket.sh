@@ -11,7 +11,6 @@ SALT=`< /dev/urandom tr -dc A-Za-z0-9 | head -c16`
 
 # Prepare group_vars/all.
 TMP_VARS=`mktemp`
-echo -e "---" >> $TMP_VARS
 echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
@@ -49,6 +48,7 @@ perl -i -p -e "s/^#(bitbucket_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP
 perl -i -p -e "s/^#(mysql_connector_java_dest):.*/\1: \"\/usr\/share\/bitbucket\/lib\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_connector_java_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_port):.*/\1: \"3306\"/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_root_pass):.*/\1: \"$PASSWD\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_collation):.*/\1: \"utf8_bin\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_encoding):.*/\1: \"utf8\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
