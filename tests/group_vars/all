@@ -1,4 +1,4 @@
-# Updated on Tue Jul 26 22:00:24 HKT 2016
+# Updated on Tue Jul 26 23:09:31 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_document_root: ~
@@ -8,7 +8,7 @@ apache2_vhosts_home: "/var/lib/bitbucket"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "bitbucket"
-apache2_vhosts_pass: ""
+apache2_vhosts_pass: "7"
 apache2_vhosts_proxy_pass: "/   http://localhost:{{ bitbucket_connector_port }}/"
 apache2_vhosts_proxy_pass_reverse: "/   http://localhost:{{ bitbucket_connector_port }}/"
 apache2_vhosts_proxy_preserve_host: "Off"
@@ -33,7 +33,7 @@ bitbucket_user: "{{ apache2_vhosts_user }}"
 mysql_connector_java_dest: "/usr/share/bitbucket/lib"
 mysql_connector_java_user: "{{ apache2_vhosts_user }}"
 mysql_port: "3306"
-mysql_root_pass: ""
+mysql_root_pass: "7"
 mysql_vhosts_collation: "utf8_bin"
 mysql_vhosts_encoding: "utf8"
 mysql_vhosts_id: "{{ apache2_vhosts_id }}"
