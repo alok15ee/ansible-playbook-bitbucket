@@ -2,8 +2,8 @@
 
 set -o xtrace
 
-rm -rf host_vars/*
-rm -rf inventory/*
+rm -rf host_vars/bitbucket.aio
+rm -rf inventory/bitbucket.aio
 
 scripts/bootstrap-inventory.sh
 scripts/bootstrap-bitbucket.sh
